@@ -23,5 +23,3 @@ app.get('/factorial/:number', (req, res) => {
   const result = factorialService.calculateFactorial(number);
   res.json({ factorial: result });
 });
-
-module.exports = app;
