@@ -3,7 +3,7 @@ import {calculateFactorial} from './factorial.js';
 import {isAuthorized} from './authorization.js'
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
